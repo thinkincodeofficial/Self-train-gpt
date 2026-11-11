@@ -1,0 +1,16 @@
+# Install PyTorch FIRST, with CUDA, from the selector at https://pytorch.org
+# (Windows, Pip, CUDA). Example:
+#   pip install torch --index-url https://download.pytorch.org/whl/cu128
+# A plain "pip install torch" gives a CPU-only build that can't use the RTX 4060.
+
+# Part 1
+numpy
+tiktoken
+datasets
+matplotlib
+
+# Part 2
+transformers>=4.56
+peft
+accelerate
+bitsandbytes   # only needed for --load_in_4bit

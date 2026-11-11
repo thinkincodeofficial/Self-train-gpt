@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Datasets (re-create with prepare.py)
+data/*/train.bin
+data/*/val.bin
+data/hf_cache/
+data/tinystories/
+data/my_videos*/
+
+# Trained weights (too big for GitHub: 129 MB / 614 MB per file)
+checkpoints/
+*.pt
+
+# Part 2: Hugging Face downloads and LoRA weights
+part2/hf_cache/
+part2/adapters/*/best/
+part2/adapters/*/final/
+part2/adapters/*/checkpoint-*/
+
+# Smoke-test run
+logs/smoke/
+samples/smoke/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
